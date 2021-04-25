@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProblemActivity">
+
+
+    <TextView
+        android:id="@+id/textViewDetailedProblem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="28dp"
+        android:text="Detailed problem description:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    -
+
+    <EditText
+        android:id="@+id/editTextDetailedProblem"
+        android:layout_width="224dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewDetailedProblem"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetailedProblem" />
+
+
+    <TextView
+        android:id="@+id/textViewRepairInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Repair information:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextDetailedProblem"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDetailedProblem" />
+
+    <EditText
+        android:id="@+id/editTextRepairInformation"
+        android:layout_width="229dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="12dp"
+        android:inputType="textMultiLine"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewRepairInformation"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepairInformation" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Back"
+        app:backgroundTint="#373D61"
+        app:layout_constraintStart_toStartOf="@+id/editTextRepairInformation"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRepairInformation" />
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:text="Done"
+        app:backgroundTint="#373D61"
+        app:layout_constraintStart_toEndOf="@+id/buttonBack"
+        app:layout_constraintTop_toTopOf="@+id/buttonBack" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
